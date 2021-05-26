@@ -1,0 +1,247 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+ol, ul, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol, ul ul, ol ul, ul ol {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+a {
+  color: dodgerblue;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #272727;
+  text-decoration: underline;
+}
+
+a:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([class]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input, button, select, optgroup, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+}
+
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+input[type=radio], input[type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: dodgerblue;
+  text-align: left;
+  background-color: white;
+}
+
+body nav #nombre-pagina {
+  font-size: 2.25rem;
+  font-weight: 400;
+  animation-name: efecto1;
+  animation-iteration-count: initial;
+  animation-timing-function: none;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+body nav .nav-item :hover {
+  transform: scale(1.02);
+}
+
+@keyframes efecto1 {
+  0% {
+    color: #272727;
+  }
+  100% {
+    color: dodgerblue;
+  }
+}
+
+main.principal {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(img/imagen1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+section.acerca-de-nosotros {
+  background-image: url(img/imagen2.jpg);
+}
+
+.titulo__principal__nos--color {
+  color: deepskyblue;
+}
+
+.titulo__secundario__nos--color {
+  color: aqua;
+}
+
+.titulo__principal__serv--color {
+  color: deepskyblue;
+}
+
+.parrafo__serv--formato {
+  color: dodgerblue;
+}
+
+.titulo__principal__ubic--color {
+  color: deepskyblue;
+}
+
+.titulo__principal__cont--color {
+  color: deepskyblue;
+}
+
+.contacto__conocimiento--color {
+  color: darkslategrey;
+}
+
+.contacto__postura--color {
+  color: darkslategrey;
+}
+/*# sourceMappingURL=estilos.css.map */
