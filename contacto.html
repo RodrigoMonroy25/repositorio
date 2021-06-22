@@ -20,12 +20,17 @@
 
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light-fixed-top py-3" id="barra-de-navegacion">
+    <nav class="navbar navbar-expand-lg" id="barra-de-navegacion">
         <div class="container">
             <!-- Título -->
-            <a class="navbar-brand js-scroll-trigger" id="nombre-pagina" href=#page-top>Coin Market Salta</a>
+            <a class="navbar-brand js-scroll-trigger" id="nombre-pagina" href=index.html>Coin Market Salta</a>
+            
             <!-- Menú -->
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-flex flex-row-reverse navbar-expand-lg" id="navbarNav">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="acercaDeNosotros.html"><em>Acerca de nosotros</em></a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="servicios.html"><em>Servicios</em></a></li>
@@ -37,62 +42,68 @@
     </nav>
 
     <!-- Formulario de contacto -->
-    <h2 class="titulo__principal__cont--color">Llena el formulario para contactarte con nosotros</h2>
-    <form action="post" enctype="application/x-www-form-urlencoded">
-        <label for="nombre">
-            Nombre: <input type="text" name="nombre" required>
-        </label>
-        <br>
-        <label for="apellido">
-            Apellido: <input type="text" name="apellido" required>
-        </label>
-        <br>
-        <label for="email">
-            E-mail: <input type="email" name="email" placeorder="abc@abc.com" required>
-        </label>
-        <br>
-        <label for="edad">
-            Edad: <input type="number" name="edad">
-        </label>
-        <br>
-        <label for="telefono">
-            Teléfono: <input type="text" name="telefono" required>
-        </label>
-        <br>
-        <label for="Sexo">Género:</label><br>
-        Hombre <input type="radio" name="Sexo" value="Hombre"><br>
-        Mujer <input type="radio" name="Sexo" value="Mujer"><br>
-        Sin especificar <input type="radio" name="Sexo" value="Sin especificar" checked>
-        <br>
-        <br>
-        <label for="conocimiento">
-            <h4 class="contacto__conocimiento--color"> Elige tu nivel de conocimiento en inversiones:</h4>
-            Ninguno <input type="checkbox" name="conocimiento" value="ninguno"><br>
-            Básico <input type="checkbox" name="conocimiento" value="basico"><br>
-            Intermedio <input type="checkbox" name="conocimiento" value="intermedio"><br>
-            Avanzado <input type="checkbox" name="conocimiento" value="avanzado"> 
-        </label>
-        <br>
-        <br>
-        <label for="posturaAnteRiesgos">
-            <h4 class="contacto__postura--color">Cómo consideras que es tu postura frente a la toma de riesgos?</h4><br>
-            <select name="posturaAnteRiesgos">
-                <option value="conservadora">Conservadora</option><br>
-                <option value="intermedia">Intermedia</option><br>
-                <option value="agresiva">Agresiva</option><br>
-            </select>
-        </label>
-
-            <br>
-            <br>
-        <br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Algún otro comentario?"></textarea><br>
-        <br>
-        <input type="submit" value="Enviar formulario"> 
-        <input type="reset" value="Limpiar formulario">
-    </form>
-
-    <a href="index.html" class="text-center volverPaginaPrincipal"><h5>Volver a la página principal</h5></a>
+    <div class="h-100" id="contacto">
+        <section class="container text-align-center justify-content-center">
+            <h2>Llena el formulario para contactarte con nosotros</h2>
+            <form class="text-center" action="post" enctype="application/x-www-form-urlencoded">
+                <label for="nombre">
+                    Nombre: <input type="text" name="nombre" required>
+                </label>
+                <br>
+                <label for="apellido">
+                    Apellido: <input type="text" name="apellido" required>
+                </label>
+                <br>
+                <label for="email">
+                    E-mail: <input type="email" name="email" placeorder="abc@abc.com" required>
+                </label>
+                <br>
+                <label for="edad">
+                    Edad: <input type="number" name="edad">
+                </label>
+                <br>
+                <label for="telefono">
+                    Teléfono: <input type="text" name="telefono" required>
+                </label>
+                <br>
+                <label for="Sexo"><h5>Género:</h5></label><br>
+                Hombre <input type="radio" name="Sexo" value="Hombre"><br>
+                Mujer <input type="radio" name="Sexo" value="Mujer"><br>
+                Sin especificar <input type="radio" name="Sexo" value="Sin especificar" checked>
+                <br>
+                <br>
+                <label for="conocimiento">
+                    <h5 class="contacto__conocimiento--color"> Elige tu nivel de conocimiento en inversiones:</h5>
+                    Ninguno <input type="checkbox" name="conocimiento" value="ninguno"><br>
+                    Básico <input type="checkbox" name="conocimiento" value="basico"><br>
+                    Intermedio <input type="checkbox" name="conocimiento" value="intermedio"><br>
+                    Avanzado <input type="checkbox" name="conocimiento" value="avanzado"> 
+                </label>
+                <br>
+                <br>
+                <label for="posturaAnteRiesgos">
+                    <h5 class="contacto__postura--color">Cómo consideras que es tu postura frente a la toma de riesgos?</h5><br>
+                    <select name="posturaAnteRiesgos">
+                        <option value="conservadora">Conservadora</option><br>
+                        <option value="intermedia">Intermedia</option><br>
+                        <option value="agresiva">Agresiva</option><br>
+                    </select>
+                </label>
+        
+                    <br>
+                    <br>
+                <br>
+                <textarea name="" id="" cols="50" rows="10" placeholder="Algún otro comentario?"></textarea><br>
+                <br>
+                <input type="submit" value="Enviar formulario"> 
+                <input type="reset" value="Limpiar formulario">
+            </form>
+        
+    
+        </section>
+    
+        <a href="index.html" class="container text-center volverPaginaPrincipal"><h5>Volver a la página principal</h5></a>    
+    </div>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

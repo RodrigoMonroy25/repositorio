@@ -20,12 +20,17 @@
 
 <body>
     <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light-fixed-top py-3" id="barra-de-navegacion">
+    <nav class="navbar navbar-expand-lg" id="barra-de-navegacion">
         <div class="container">
             <!-- Título -->
-            <a class="navbar-brand js-scroll-trigger" id="nombre-pagina" href=#page-top>Coin Market Salta</a>
+            <a class="navbar-brand js-scroll-trigger" id="nombre-pagina" href=index.html>Coin Market Salta</a>
+            
             <!-- Menú -->
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-flex flex-row-reverse navbar-expand-lg" id="navbarNav">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="acercaDeNosotros.html"><em>Acerca de nosotros</em></a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="servicios.html"><em>Servicios</em></a></li>
@@ -35,21 +40,53 @@
             </div>
         </div>
     </nav>
-
-    <section class="">
-        <h1 class="titulo__principal__serv--color">Potenciamos tus ahorros para que cumplas tus sueños</h1>
-        <p class="text-dark parrafo__serv--formato">
-            Nuestra filosofía es trabajar poniendo en primer lugar la necesidad financiera de nuestro cliente, respetando cada perfil de riesgo. A partir de ello, gestionamos cuentas activamente y asesoramos tanto a personas físicas y jurídicas. Prestando especial atención a la etapa en la que se encuentra, horizonte y necesidad de liquidez de su ahorro, tolerancia al riesgo y objetivos de inversión.
-        </p>
-        <p class="text-dark parrafo__serv--formato">
-            Los clientes de Coin Capital reciben además de manera mensual, un informe detallado de sus inversiones, expectativas del mercado y acceso web con precios on line de cada activo. Análisis de la Inversión Global de su posición, con resultados diarios, mensuales o anuales.
-        </p>
-        <p class="text-dark parrafo__serv--formato">
-            Nuestro fuerte son los activos digitales, pero también realizamos asesoría con respecto a fondos comunes de inversión, acciones, opciones y otros diversos tipos de inversiones.
-        </p>
+    <section class="h-100" id="servicios">
+        <div class="container">
+            <h1 class="">Potenciamos tus ahorros para que cumplas tus sueños</h1>
+            <p class="text-light">
+                Nuestra filosofía es trabajar poniendo en primer lugar la necesidad financiera de nuestro cliente, respetando cada perfil de riesgo. A partir de ello, gestionamos cuentas activamente y asesoramos tanto a personas físicas y jurídicas. Prestando especial atención a la etapa en la que se encuentra, horizonte y necesidad de liquidez de su ahorro, tolerancia al riesgo y objetivos de inversión.
+            </p>
+            <p class="text-light">
+                Los clientes de Coin Capital reciben además de manera mensual, un informe detallado de sus inversiones, expectativas del mercado y acceso web con precios on line de cada activo. Análisis de la Inversión Global de su posición, con resultados diarios, mensuales o anuales.
+            </p>
+            <p class="text-light">
+                Nuestro fuerte son los activos digitales, pero también realizamos asesoría con respecto a fondos comunes de inversión, acciones, opciones y otros diversos tipos de inversiones.
+            </p>
+            <h1>Nuestras bases: Análisis técnico y fundamental</h1>
+            <p class="text-light">Nuestros principales análisis de inversión se basan en el análisis técnico tanto de monedas digitales como de acciones, es decir, es el análisis exclusivamente de gráficos e indicadores. Utilizamos diversas herramientas para saber cuándo es buen momento para invertir o cuándo retirarse, priorizando el incremento de valor del capital y evitando que éste disminuya.</p>
+            <p class="text-light">Nuestra prioridad es hacer énfasis en el análisis técnico, ya que te permite analizar cualquier mercado, emisora, índice, moneda, o tasa, independientemente del idioma en que estén expresados.</p>
+            <p class="text-light">La plataforma que utilizamos para este análisis es TradingView:</p>
+            <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div id="tradingview_bae28"></div>
+    <div class="tradingview-widget-copyright"><a href="https://es.tradingview.com/symbols/BTCUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">BTCUSD Gráfico</span></a> por TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+    new TradingView.widget(
+    {
+    "width": 480,
+    "height": 350,
+    "symbol": "COINBASE:BTCUSD",
+    "interval": "D",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "theme": "dark",
+    "style": "2",
+    "locale": "es",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": true,
+    "allow_symbol_change": true,
+    "save_image": false,
+    "container_id": "tradingview_bae28"
+  }
+    );
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+            <p class="text-light">También realizamos (con menor frecuencia, pero siempre lo tenemos en cuenta) análisis fundamental, es el que trata de establecer el valor teórico de la acción (precio objetivo) de una compañía o moneda y de anticipar cuál será su futuro comportamiento en el mercado, con base en el estudio detallado de toda la información económico-financiera disponible del proyecto de la moneda digital o de la empresa</p>
+            <a href="index.html" class="container text-center volverPaginaPrincipal"><h5>Volver a la página principal</h5></a>
+        </div>
     </section>
 
-    <a href="index.html" class="text-center volverPaginaPrincipal"><h5>Volver a la página principal</h5></a>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>

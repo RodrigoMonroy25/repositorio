@@ -91,7 +91,7 @@ a {
 }
 
 a:hover {
-  color: #272727;
+  color: grey;
   text-decoration: underline;
 }
 
@@ -177,6 +177,7 @@ body {
 }
 
 body nav #nombre-pagina {
+  color: dodgerblue;
   font-size: 2.25rem;
   font-weight: 400;
   animation-name: efecto1;
@@ -202,46 +203,46 @@ body nav .nav-item :hover {
 main.principal {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(img/imagen1.jpg);
+  background: linear-gradient(to bottom, #272727 0%, rgba(117, 117, 117, 0.8) 100%), url(img/imagen1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
-section.acerca-de-nosotros {
-  background-image: url(img/imagen2.jpg);
+#acerca-de-nosotros {
+  background: linear-gradient(to bottom, #272727 0%, rgba(0, 0, 0, 0.8) 100%), url(img/imagen2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-.titulo__principal__nos--color {
-  color: deepskyblue;
+#servicios {
+  background: linear-gradient(to bottom, #272727 0%, rgba(0, 0, 0, 0.8) 100%), url(img/imagen3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-.titulo__secundario__nos--color {
-  color: aqua;
+#contacto {
+  background: linear-gradient(to bottom, #272727 0%, rgba(0, 0, 0, 0.8) 100%), url(img/imagen4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-.titulo__principal__serv--color {
-  color: deepskyblue;
+#ubicacion {
+  background: linear-gradient(to bottom, #272727 0%, rgba(0, 0, 0, 0.8) 100%), url(img/imagen5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
-.parrafo__serv--formato {
-  color: dodgerblue;
-}
-
-.titulo__principal__ubic--color {
-  color: deepskyblue;
-}
-
-.titulo__principal__cont--color {
-  color: deepskyblue;
-}
-
-.contacto__conocimiento--color {
-  color: darkslategrey;
-}
-
-.contacto__postura--color {
-  color: darkslategrey;
+#barra-de-navegacion {
+  background-color: #272727;
 }
 /*# sourceMappingURL=estilos.css.map */
